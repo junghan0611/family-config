@@ -1,0 +1,77 @@
+# Family Config - Template Repository
+# 실제 가족 데이터는 ~/org/family/에 별도 관리
+
+# 민감 정보
+*.private
+*.private.*
+*-private.*
+*-sensitive.*
+secrets/
+.env
+.env.*
+
+# 개인 데이터
+**/personal-*.org
+**/personal-*.md
+
+# 임시 파일
+*.tmp
+*.bak
+*~
+.#*
+\#*\#
+*.swp
+*.swo
+
+# OS 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Emacs 임시 파일
+*~
+\#*\#
+.\#*
+.projectile
+
+# Org-mode 관련
+*.org_archive
+.org-id-locations
+*.ics
+
+# 로그 파일
+*.log
+
+# 데이터베이스 (실제 데이터)
+*.db
+*.sqlite
+*.sqlite3
+
+# 백업 파일
+backup/
+backups/
+*.backup
+
+# 테스트 데이터 (템플릿은 포함, 실제 데이터만 제외)
+**/test-data/
+**/sample-data/
+
+# Node modules (MCP 등)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 금융 데이터
+**/ledger/*.ledger
+**/ledger-*.dat
+**/finances/*.csv
+**/expenses/*.xlsx
+
+# 개인 정보가 포함된 문서
+**/실명-*.org
+**/실명-*.md
