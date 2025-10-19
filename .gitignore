@@ -65,6 +65,21 @@ __pycache__/
 *.pyo
 .venv/
 venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Python 가상환경 (scripts 하위)
+scripts/*/venv/
+scripts/*/.venv/
+scripts/*/env/
+
+# Photo organizer 관련
+scripts/photo_organizer/logs/
+scripts/photo_organizer/*.log
+duplicate_cache.json
+*.cache
 
 # 금융 데이터
 **/ledger/*.ledger
@@ -75,3 +90,6 @@ venv/
 # 개인 정보가 포함된 문서
 **/실명-*.org
 **/실명-*.md
+
+
+*__human.org
